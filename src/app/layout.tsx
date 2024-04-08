@@ -1,5 +1,7 @@
+import DarkContextProvider from '@/context/darkmode-context';
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Header from './components/header';
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,11 +18,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gray-50 text-gray-950 relative dark:bg-[#100f0f] dark:text-[#d6d6d6] `}>
-        <header />
+      
+      <body className={`${inter.className} bg-[#313131] text-gray-950 relative dark:bg-[#100f0f] dark:text-[#d6d6d6] `}>
+        <DarkContextProvider>
+      <Header />
         {children}
-        
+        </DarkContextProvider>
         </body>
+        
     </html>
   );
 }
