@@ -1,6 +1,7 @@
 import DarkContextProvider from '@/context/darkmode-context';
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Footer from './components/footer';
 import Header from './components/header';
 import "./globals.css";
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <DarkContextProvider>
       <Header />
         {children}
+        <Footer />
         </DarkContextProvider>
         </body>
         
