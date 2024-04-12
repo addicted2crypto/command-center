@@ -13,6 +13,8 @@ export default function Header() {
     <div className='flex flex-auto text-bold font-bold z-10 w-1/3 absolute top-10 left-10 text-[#383838] -mt-4 dark:text-[#d6d6d6] sm:flex-nowrap'>
       Command Center
       </div> 
+      
+    
       <form className='flex justify-start pl-20 p-12 flex-auto'>search accounts, NFTs, tokens...</form>
       <div className='p-5'>
       <Button className='bg-[#393838] rounded-lg p-3 hover:translate-y-2'>Yeild yak</Button>
