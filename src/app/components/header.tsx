@@ -1,6 +1,7 @@
 "use client"
 import { Button } from '@/components/ui/button';
-import Image from 'next/image';
+import { Input } from "@/components/ui/input"
+
 import React from 'react';
 
 
@@ -14,9 +15,14 @@ export default function Header() {
       Command Center
       </div> 
       
+      
       {/* add search bar component and bring it in here */}
-      <form className='flex justify-start pl-20 p-12 flex-auto'>search accounts, NFTs, tokens...</form>
+      <div className='flex flex-1 p-8'>
+      {/* <form className='flex justify-start pl-20 p-12'>search accounts, NFTs, tokens...</form> */}
+      <Input type="search" placeholder='search accounts, NFTs, tokens...'className='flex justify-start pl-20 p-12 z-1'/>
+      </div>
       <div className='p-5'>
+      
       <Button className='bg-[#393838] rounded-lg p-3 hover:translate-y-2'>Yeild yak</Button>
       </div>
       <div className='flex flex-grid font-serif w-1/3'>
@@ -28,6 +34,7 @@ export default function Header() {
         <image className='p-8 absolute top-[2rem] right-[6rem] hover:translate-y-2'aria-hidden='true'>profile image/name</image>
         
             <div>
+               {/* add Bring in a swap link */}
               <a href="/swap" className='pt-2 pr-[2rem] hover:translate-y-1'>swap chains/bridge</a>
                 <Button className='p-3 absolute top-[1.5rem] right-6 rounded-full bg-current hover:rounded-lg hover:bg-[#3d2525] transition hover:translate-x-1'>🔔</Button>
 
