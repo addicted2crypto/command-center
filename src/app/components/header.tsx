@@ -14,7 +14,7 @@ export default function Header() {
       Command Center
       </div> 
       
-    
+      {/* add search bar component and bring it in here */}
       <form className='flex justify-start pl-20 p-12 flex-auto'>search accounts, NFTs, tokens...</form>
       <div className='p-5'>
       <Button className='bg-[#393838] rounded-lg p-3 hover:translate-y-2'>Yeild yak</Button>
