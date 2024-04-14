@@ -28,7 +28,7 @@ export default function Header() {
         <image className='p-8 absolute top-[2rem] right-[6rem] hover:translate-y-2'aria-hidden='true'>profile image/name</image>
         
             <div>
-              <a href="/swap" className='pt-2 pr-[2rem] hover:translate-y-1'>swap chains</a>
+              <a href="/swap" className='pt-2 pr-[2rem] hover:translate-y-1'>swap chains/bridge</a>
                 <Button className='p-3 absolute top-[1.5rem] right-6 rounded-full bg-current hover:rounded-lg hover:bg-[#3d2525] transition hover:translate-x-1'>🔔</Button>
 
             </div>
