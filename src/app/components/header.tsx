@@ -19,7 +19,7 @@ export default function Header() {
       {/* add search bar component and bring it in here */}
       <div className='flex flex-1 p-8'>
       {/* <form className='flex justify-start pl-20 p-12'>search accounts, NFTs, tokens...</form> */}
-      <Input type="search" placeholder='search accounts, NFTs, tokens...'className='flex justify-start pl-20 p-12 z-1 />
+      <Input type="search" placeholder='search accounts, NFTs, tokens...'className='flex justify-start pl-20 p-12 z-1 '/>
       </div>
       <div className='p-5'>
       
