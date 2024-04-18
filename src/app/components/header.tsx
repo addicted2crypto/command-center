@@ -1,6 +1,7 @@
 "use client"
 import { Button } from '@/components/ui/button';
 import { Input } from "@/components/ui/input"
+import Image from 'next/image';
 
 import React from 'react';
 
@@ -31,7 +32,7 @@ export default function Header() {
       <div className='font-bold p-5'>View multichain</div>
       </div>
       <div className='font-semibold md:pl-[30rem] sm:pl-8 w-1/3'>
-        <image className='p-8 absolute top-[2rem] right-[15rem] hover:translate-y-2 hidden lg:block'aria-hidden='true'>profile image/name</image>
+        <span className='p-8 absolute top-[2rem] right-[15rem] hover:translate-y-2 hidden lg:block'aria-hidden='true'>profile image/name</span>
         
             <div className='p-4 flex flex-1'> 
                {/* add Bring in a swap link */}
